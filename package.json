@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesurbagci/npm-gcp-logger.git"
+  },
   "scripts": {
     "unit-test": "mocha --reporter spec $(find test -name \"*${npm_config_name}*.unit*test.js\") -g \"${npm_config_like}\" --timeout=20000 --exit",
     "integration-test": "mocha --reporter spec $(find test -name \"*${npm_config_name}*.integration*test.js\") -g \"*${npm_config_like}\" --timeout=20000 --exit",
